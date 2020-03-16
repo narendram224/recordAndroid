@@ -1,6 +1,7 @@
 // window.onload(function () {
 //     alert("hii");
 var mousemoveornot;
+var toggle = false;
 document.addEventListener("DOMContentLoaded", function(event) {
   // - Code to execute when all DOM content is loaded.
   // - including fonts, images, etc.
@@ -156,7 +157,9 @@ var img  = new Image(40,40)
   img.style.height="60px";
   img.setAttribute("id", "cva");
   img.addEventListener("click", function() {
+      toggle=!toggle;
     alertLoop(0);
+
   });
   img.style.top = cvaPos.x + "px";
   img.style.left = cvaPos.y + "px";
@@ -278,7 +281,7 @@ var selctedval = document.getElementById("screen").value;
   console.log("the selected value",selctedval);
   var returnVal = firstinterface.getScreenFromScript(selctedval);
   var idsArray = changeArray();
-  if (idsArray[i]) {
+  if (idsArray[i] && toggle) {
     console.log(idsArray[i]);
     setTimeout(function() {
       var div = document.getElementById(idsArray[i]);
