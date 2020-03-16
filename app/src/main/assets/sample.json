@@ -1,0 +1,15 @@
+{
+  "project_name": "narendra_demo_app",
+  "default_assistant_location": "ASSISTANT_TOP_CENTER",
+  "assistant_size": "80x80",
+   "Mainscreen-state1":[
+     "first_view_id",
+     "second_view_id",
+     "third_view_id"
+    ],
+    "Mainscreen-state2":[
+      "first_view_id",
+      "second_view_id",
+      "third_view_id"
+    ]
+}
