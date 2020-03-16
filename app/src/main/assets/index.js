@@ -95,7 +95,12 @@ function genrateSlectorforScreens(passedArray) {
 }
 function changeArray() {
   var selctedval = document.getElementById("screen").value;
-  console.log(selctedval);
+  console.log("the selected value",selctedval);
+  var returnVal = firstinterface.getScreenFromScript(selctedval);
+  console.log(returnVal);
+
+
+
   switch (document.getElementById("screen").value) {
     case "Mainscreen-state1":
       return ["id1", "id2", "id3", "id4"];
@@ -269,6 +274,9 @@ function createILottlieImages(positions,url,id) {
 }
 
 function alertLoop(i) {
+var selctedval = document.getElementById("screen").value;
+  console.log("the selected value",selctedval);
+  var returnVal = firstinterface.getScreenFromScript(selctedval);
   var idsArray = changeArray();
   if (idsArray[i]) {
     console.log(idsArray[i]);
@@ -303,7 +311,7 @@ function forCvaAnimationCreate(imgur) {
     // console.log(rect);
     // var posTosetAnimation  = offset(divs);
     console.log("postion of cva",rect);
-    var positions = {bottom:rect.y,right:rect.x+10};
+    var positions = {bottom:rect.y+3,right:rect.x+3};
     
      var lottie =  createILottlieImages(positions,getUrls()[imgur],"cvaAni");
      parent.insertBefore(lottie, divs);
