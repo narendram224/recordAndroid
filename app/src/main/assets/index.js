@@ -263,6 +263,10 @@ function createILottlieImages(positions,url,id) {
       // 'https://i.ibb.co/stJJLzB/finger.png';
     //   "https://assets1.lottiefiles.com/packages/lf20_Xm5U0Q.json";
     img.setAttribute("id",id);
+    img.addEventListener("click", function() {
+          toggle=!toggle;
+
+      });
     img.style.position = "absolute";
     img.style.width = "55px";
     img.style.height = "55px";
