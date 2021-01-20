@@ -8,7 +8,7 @@ input[type=text], select {
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+  input[type=button] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
@@ -27,4 +27,29 @@ input[type=text], select {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+  }
+
+  .listItem{
+    background: #f2f2f2;
+  padding: 20px;
+  list-style: decimal;
+  color: #45a049;
+  }
+  .listItem li{
+    padding: 5px;
+    margin-left: 35px;
+    color: #ccc;
+    text-decoration: none;
+    
+  }
+  .listItem li a{
+    text-decoration: none;
+
+  }
+  .labelClass{
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 12px;
+    margin-top: 20px;
+    color: #e38f1f;
   }
